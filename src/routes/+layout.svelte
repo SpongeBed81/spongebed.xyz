@@ -1,4 +1,5 @@
 <script>
+ import Altbar from "../components/altbar.svelte";
  import { status } from "../stores.js"
  export let data;
  status.set(data.lanyard)
@@ -11,3 +12,4 @@
 <PageTransition url={data.url}>
  <slot></slot>
 </PageTransition>
+<Altbar></Altbar>

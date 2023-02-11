@@ -1,10 +1,5 @@
-<script>
- import Altbar from "./altbar.svelte";
-</script>
-
 <div class="website-content" {...$$restProps}>
  <slot></slot>
- <Altbar></Altbar>
 </div>
 
 <style>
