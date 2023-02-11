@@ -14,7 +14,7 @@
   <p>Thanks for visiting. I hope you enjoyed your stay. The source code for this website is available at <a href="https://github.com/SpongeBed81/spongebed.me">SpongeBed81/spongebed.me</a></p>
   <h3>Contact</h3>
   <p>I'm generally active on Discord, you can send a friend request to {$status.data.discord_user.username}#{$status.data.discord_user.discriminator}</p>
-  <p>If I didn't responded, you can also send me a message through <a href="https://www.instagram.com/spongebed81/">Instagram</a></p>
+  <p>If I didn't respond, you can also send me a message through <a href="https://www.instagram.com/spongebed81/">Instagram</a></p>
  </div>
 </Scene>
 
