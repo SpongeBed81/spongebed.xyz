@@ -132,5 +132,6 @@
   border-left: none;
   display: flex;
   z-index: 999999;
+  margin-left: -1px;
  }
 </style>
