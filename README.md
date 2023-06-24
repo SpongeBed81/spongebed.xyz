@@ -1,4 +1,4 @@
-# spongebed.me 🧽
+# spongebed.xyz 🧽
 
 My website's source code 😁
 
