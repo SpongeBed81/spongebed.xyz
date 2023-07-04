@@ -24,6 +24,7 @@
       type="Frontend framework"
       useCase="Constructing stateful and durable frontends for large and interactive web apps"
       svg={Svelte}
+      href="https://svelte.dev"
     />
     <LanguageCard
       name="JavaScript"
@@ -31,6 +32,7 @@
       type="Language"
       useCase="Websites, mobile, desktop apps and backend servers"
       svg={Javascript}
+      href="https://en.wikipedia.org/wiki/JavaScript"
     />
     <LanguageCard
       name="C#"
@@ -38,6 +40,7 @@
       type="Language"
       useCase="Building GUI applications and realtime communication."
       svg={Csharp}
+      href="https://learn.microsoft.com/en-us/dotnet/csharp/"
     />
     <LanguageCard
       name="Capacitor"
@@ -45,6 +48,7 @@
       type="Framework"
       useCase="Building mobile applications using JavaScript"
       svg={Capacitor}
+      href="https://capacitorjs.com/"
     />
   </div>
 </Scene>
