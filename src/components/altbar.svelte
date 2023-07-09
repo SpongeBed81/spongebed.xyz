@@ -4,32 +4,10 @@
  let statusText;
  let color;
 
-  $status.data.activities = $status.data.activities.filter(x => x.id !== "custom")
- const find = $status.data.activities.find(x => x.name.toLowerCase().startsWith("visual studio"))
 
- if(find) {
-  if(find.name.toLowerCase().includes("code")) {
-   statusText = "Programming in Visual Studio Code"
-  } else {
-   statusText = "Programming in Visual Studio"   
-  }
- } else {
-  if($status.data.listening_to_spotify == true) {
-   statusText = "Listening " + $status.data.spotify.song + " by " + $status.data.spotify.artist + " on Spotify"
-  } else {
-    if($status.data.activities.length > 0){
-      if($status.data.activities[0].id == "fe2542dcc6f707f4") {
-        statusText = "Listening " + $status.data.activities[0].details + " by " + $status.data.activities[0].state + " on YouTube Music"
-      } else {
-        statusText = "Playing " + $status.data.activities[0].name
-      }
-    } else {
-      statusText = "Currently doing nothing"
-    }
-  }
- } 
  
- switch ($status.data.discord_status) {
+ $: {
+  switch ($status.discord_status) {
   case "dnd":
    color = "red"
    break;
@@ -42,19 +20,46 @@
   case "offline":
    color = "grey"
    break; 
+  }
+
+   $status.activities = $status.activities.filter(x => x.id !== "custom")
+ const find = $status.activities.find(x => x.name.toLowerCase().startsWith("visual studio"))
+
+ if(find) {
+  if(find.name.toLowerCase().includes("code")) {
+   statusText = "Programming in Visual Studio Code"
+  } else {
+   statusText = "Programming in Visual Studio"   
+  }
+ } else {
+  if($status.listening_to_spotify == true) {
+   statusText = "Listening " + $status.spotify.song + " by " + $status.spotify.artist + " on Spotify"
+  } else {
+    if($status.activities.length > 0){
+      if($status.activities[0].id == "fe2542dcc6f707f4") {
+        statusText = "Listening " + $status.activities[0].details + " by " + $status.activities[0].state + " on YouTube Music"
+      } else {
+        statusText = "Playing " + $status.activities[0].name
+      }
+    } else {
+      statusText = "Currently doing nothing"
+    }
+  }
+ } 
+
  }
 </script>
 
 <div class="alt-holder">
- <div class="short">
+<div class="short">
   <div style="background-color: {color}" id="left-m"></div>
-  <span>{$status.data.discord_status.replace("dnd", "Do not Disturb").replace("online", "Online").replace("idle", "Idle").replace("offline", "Offline")}</span>
+  <span>{$status.discord_status.replace("dnd", "Do not Disturb").replace("online", "Online").replace("idle", "Idle").replace("offline", "Offline")}</span>
  </div>
 
  {#if statusText}
  <div class="short p">
-  {#if statusText.startsWith("Listening") && statusText.endsWith("on Spotify")}
-  <a href="https://open.spotify.com/track/{$status.data.spotify.track_id}">{statusText}</a>
+  {#if statusText.startsWith("Listening") && statusText.endsWith("on Spotify") && $status.spotify}
+  <a href="https://open.spotify.com/track/{$status.spotify.track_id}">{statusText}</a>
   {:else}
   <span>{statusText}</span>
   {/if}
