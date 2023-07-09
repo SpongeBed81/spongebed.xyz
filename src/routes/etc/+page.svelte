@@ -21,9 +21,9 @@
     <h3>Contact</h3>
     <p>
       I'm generally active on Discord, you can send a friend request to {$status
-        .data.discord_user.username}{$status.data.discord_user.discriminator !=
+        .discord_user.username}{$status.discord_user.discriminator !=
       "0"
-        ? "#" + $status.data.discord_user.discriminator
+        ? "#" + $status.discord_user.discriminator
         : ""}
     </p>
     <p>
