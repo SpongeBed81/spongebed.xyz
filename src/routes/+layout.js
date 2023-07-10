@@ -1,9 +1,11 @@
+import { env } from "$env/dynamic/public";
+
 let fetched;
 
 export async function load({ fetch, url }) {
   if (!fetched) {
     const data = await fetch(
-      "https://api.lanyard.rest/v1/users/407486004505870336"
+      `https://api.lanyard.rest/v1/users/${env.PUBLIC_DISCORD_ID}`
     );
     fetched = await data.json();
   }

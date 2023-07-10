@@ -4,6 +4,7 @@
   import { navigating } from "$app/stores";
   let root;
   let open = false;
+  let routeSelector;
   let icons = [
     //kapalı
     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`,
@@ -20,7 +21,8 @@
     const getTop = root
       .querySelector(`[href="${route}"]`)
       .getBoundingClientRect();
-    root.querySelector(".route-selector").style.top = getTop.top + "px";
+    routeSelector.style.top = getTop.top + "px";
+    routeSelector.style.opacity = 1;
   }
 
   onMount(() => {
@@ -53,7 +55,7 @@
 </script>
 
 <div class="sidebar" bind:this={root}>
-  <div class="route-selector" />
+  <div class="route-selector" bind:this={routeSelector} />
   <div class="hold">
     <div class="top">
       <p>SpongeBed</p>
@@ -183,7 +185,8 @@
     background-color: white;
     height: 39px;
     right: -1px;
-    transition: top 250ms;
+    transition: top 250ms, opacity 0.2s;
+    opacity: 0;
   }
 
   .routes > a {
