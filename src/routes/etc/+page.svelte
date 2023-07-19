@@ -10,7 +10,7 @@
 <Scene>
   <div class="etc-holder">
     <h1>/etc</h1>
-    <h3>Thanks</h3>
+    <h2>Thanks</h2>
     <p>
       Thanks for visiting. I hope you enjoyed your stay. The source code for
       this website is available at <a
@@ -18,11 +18,10 @@
         >SpongeBed81/spongebed.xyz</a
       >
     </p>
-    <h3>Contact</h3>
+    <h2>Contact</h2>
     <p>
       I'm generally active on Discord, you can send a friend request to {$status
-        .discord_user.username}{$status.discord_user.discriminator !=
-      "0"
+        .discord_user.username}{$status.discord_user.discriminator != "0"
         ? "#" + $status.discord_user.discriminator
         : ""}
     </p>
