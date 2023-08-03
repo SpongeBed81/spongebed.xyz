@@ -14,7 +14,7 @@
   <div class="companies-holder">
     <CompanyCard
       name="OpenAnime"
-      image="https://openani.me/favicon.png"
+      image="/openanime.png"
       category="Entertainment"
       url="https://openani.me"
       role="CEO, Founder & Developer"
