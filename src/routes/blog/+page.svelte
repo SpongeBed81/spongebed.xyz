@@ -7,6 +7,10 @@
   const allPosts = data.allPosts;
 </script>
 
+<svelte:head>
+  <title>Blog - SpongeBed</title>
+</svelte:head>
+
 <Scene>
   <h1>My Blog</h1>
   <h3>I like to share what I know with other people.</h3>

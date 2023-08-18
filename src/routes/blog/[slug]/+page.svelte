@@ -31,6 +31,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>{metadata.title}</title>
+</svelte:head>
+
 <Scene>
   <div class="metadata-body">
     <h1>{metadata.title}</h1>
