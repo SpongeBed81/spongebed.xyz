@@ -18,11 +18,14 @@
   }
 
   function selectRoute(route) {
-    const getTop = root
-      .querySelector(`[href="${route}"]`)
-      .getBoundingClientRect();
-    routeSelector.style.top = getTop.top + "px";
-    routeSelector.style.opacity = 1;
+    const getEl = route.startsWith("/blog")
+      ? root.querySelector(`[href="/blog"]`)
+      : root.querySelector(`[href="${route}"]`);
+    if (getEl) {
+      const getTop = getEl.getBoundingClientRect();
+      routeSelector.style.top = getTop.top + "px";
+      routeSelector.style.opacity = 1;
+    }
   }
 
   onMount(() => {
@@ -99,6 +102,13 @@
           href="/etc"
           style={$page.route.id == "/etc" ? "color: white" : undefined}
           >more + contact</a
+        >
+
+        <a
+          href="/blog"
+          style={$page.route.id.startsWith("/blog")
+            ? "color: white"
+            : undefined}>blog</a
         >
       </div>
     </div>

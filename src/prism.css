@@ -1,0 +1,190 @@
+code {
+  color: #d4d4d4;
+}
+
+code[class*="language-javascript"],
+code[class*="language-jsx"],
+code[class*="language-tsx"],
+code[class*="language-typescript"] {
+  color: #9cdcfe;
+}
+
+code[class*="language-css"] {
+  color: #ce9178;
+}
+
+code[class*="language-html"] {
+  color: #d4d4d4;
+}
+
+code .language-regex .anchor {
+  color: #dcdcaa;
+}
+
+code .language-html .punctuation {
+  color: gray;
+}
+
+code .namespace {
+  opacity: 0.7;
+}
+
+code .doctype .doctype-tag {
+  color: #569cd6;
+}
+
+code .doctype .name {
+  color: #9cdcfe;
+}
+
+code .comment,
+code .prolog {
+  color: #6a9955;
+}
+
+code .language-html .language-css .punctuation,
+code .language-html .language-javascript .punctuation,
+code .punctuation {
+  color: #d4d4d4;
+}
+
+code .boolean,
+code .constant,
+code .inserted,
+code .number,
+code .property,
+code .symbol,
+code .tag,
+code .unit {
+  color: #b5cea8;
+}
+
+code .attr-name,
+code .builtin,
+code .char,
+code .deleted,
+code .selector,
+code .string {
+  color: #ce9178;
+}
+
+code .language-css .string.url {
+  text-decoration: underline;
+}
+
+code .entity,
+code .operator {
+  color: #d4d4d4;
+}
+
+code .operator.arrow {
+  color: #569cd6;
+}
+
+code .atrule {
+  color: #ce9178;
+}
+
+code .atrule .rule {
+  color: #c586c0;
+}
+
+code .atrule .url {
+  color: #9cdcfe;
+}
+
+code .atrule .url .function {
+  color: #dcdcaa;
+}
+
+code .atrule .url .punctuation {
+  color: #d4d4d4;
+}
+
+code .keyword {
+  color: #569cd6;
+}
+
+code .keyword.control-flow,
+code .keyword.module {
+  color: #c586c0;
+}
+
+code .function,
+code .function .maybe-class-name {
+  color: #dcdcaa;
+}
+
+code .regex {
+  color: #d16969;
+}
+
+code .important {
+  color: #569cd6;
+}
+
+code .italic {
+  font-style: italic;
+}
+
+code .constant {
+  color: #9cdcfe;
+}
+
+code .class-name,
+code .maybe-class-name {
+  color: #4ec9b0;
+}
+
+code .console,
+code .parameter,
+code .interpolation {
+  color: #9cdcfe;
+}
+
+code .punctuation.interpolation-punctuation,
+code .boolean {
+  color: #569cd6;
+}
+
+code .exports .maybe-class-name,
+code .imports .maybe-class-name,
+code .property,
+code .variable {
+  color: #9cdcfe;
+}
+
+code .selector,
+code .escape {
+  color: #d7ba7d;
+}
+
+code .tag {
+  color: #569cd6;
+}
+
+code .tag .punctuation,
+code .cdata {
+  color: gray;
+}
+
+code .attr-name {
+  color: #9cdcfe;
+}
+
+code .attr-value,
+code .attr-value .punctuation {
+  color: #ce9178;
+}
+
+code .attr-value .punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+code .entity {
+  color: #569cd6;
+}
+
+code .namespace {
+  color: #4ec9b0;
+}
