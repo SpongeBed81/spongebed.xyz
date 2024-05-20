@@ -5,6 +5,8 @@
   import Javascript from "../../icons/javascript.svelte";
   import Csharp from "../../icons/csharp.svelte";
   import Capacitor from "../../icons/capacitor.svelte";
+  import Typescript from "../../icons/typescript.svelte";
+  import Cpp from "../../icons/cpp.svelte";
 </script>
 
 <svelte:head>
@@ -27,12 +29,12 @@
       href="https://svelte.dev"
     />
     <LanguageCard
-      name="JavaScript"
-      color="#F7DF1E"
+      name="TypeScript"
+      color="#007acc"
       type="Language"
       useCase="Websites, mobile, desktop apps and backend servers"
-      svg={Javascript}
-      href="https://en.wikipedia.org/wiki/JavaScript"
+      svg={Typescript}
+      href="https://www.typescriptlang.org/"
     />
     <LanguageCard
       name="C#"
@@ -40,6 +42,14 @@
       type="Language"
       useCase="Building GUI applications and realtime communication."
       svg={Csharp}
+      href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+    />
+    <LanguageCard
+      name="C++"
+      color="#00589d"
+      type="Language"
+      useCase="Building GUI applications and realtime communication."
+      svg={Cpp}
       href="https://learn.microsoft.com/en-us/dotnet/csharp/"
     />
     <LanguageCard

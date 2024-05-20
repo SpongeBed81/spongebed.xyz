@@ -35,6 +35,18 @@
   <h3>Open-source Projects</h3>
   <div class="projects">
     <Card
+      name="supangle"
+      language="C++"
+      url="https://github.com/SpongeBed81/supangle"
+      description="A JavaScript runtime based on Google's V8 engine"
+    />
+    <Card
+      name="owebjs"
+      language="TypeScript"
+      url="https://github.com/owebjs/oweb"
+      description="Flexible handler that built on top of Fastify"
+    />
+    <Card
       name="fluent-svelte-extra"
       language="TypeScript"
       url="https://github.com/OpenAnime/fluent-svelte-extra"
