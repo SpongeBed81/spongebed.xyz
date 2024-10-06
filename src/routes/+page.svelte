@@ -17,7 +17,7 @@
     <br /> at providing the best viewing experience.
   </p>
   <p>
-    I have 4 years of experience in programming and I generally use TypeScript
+    I have 5 years of experience in programming and I generally use TypeScript
     and C# in my projects. <br /> And I also use Svelte as my main frontend framework.
   </p>
   <p>In my free time, I love talking about programming and improving myself.</p>
