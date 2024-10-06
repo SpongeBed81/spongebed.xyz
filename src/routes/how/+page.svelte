@@ -48,9 +48,9 @@
       name="C++"
       color="#00589d"
       type="Language"
-      useCase="Building GUI applications and realtime communication."
+      useCase="Building CLI applications and performance intensive tasks"
       svg={Cpp}
-      href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+      href="https://en.wikipedia.org/wiki/C%2B%2B"
     />
     <LanguageCard
       name="Capacitor"
