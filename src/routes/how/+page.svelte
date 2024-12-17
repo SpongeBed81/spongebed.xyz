@@ -7,6 +7,7 @@
   import Capacitor from "../../icons/capacitor.svelte";
   import Typescript from "../../icons/typescript.svelte";
   import Cpp from "../../icons/cpp.svelte";
+  import React from "../../icons/react.svelte";
 </script>
 
 <svelte:head>
@@ -27,6 +28,14 @@
       useCase="Constructing stateful and durable frontends for large and interactive web apps"
       svg={Svelte}
       href="https://svelte.dev"
+    />
+    <LanguageCard
+      name="React"
+      color="rgb(3, 28, 65)"
+      type="Frontend framework"
+      useCase="Constructing stateful and durable frontends for large and interactive web apps"
+      svg={React}
+      href="https://react.dev/"
     />
     <LanguageCard
       name="TypeScript"
@@ -51,6 +60,14 @@
       useCase="Building CLI applications and performance intensive tasks"
       svg={Cpp}
       href="https://en.wikipedia.org/wiki/C%2B%2B"
+    />
+    <LanguageCard
+      name="React Native"
+      color="rgb(3, 28, 65)"
+      type="Framework"
+      useCase="Building mobile applications using JavaScript"
+      svg={React}
+      href="https://reactnative.dev/"
     />
     <LanguageCard
       name="Capacitor"
